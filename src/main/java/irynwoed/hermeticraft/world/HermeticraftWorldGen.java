@@ -44,6 +44,11 @@ public class HermeticraftWorldGen implements IWorldGenerator{
             int posZ = blockZPos + random.nextInt(16);
             minable.generate(world, random, new BlockPos(posX, posY, posZ));
         }
+      public static void init() {
+    	HermeticraftWorldGen generator = HermeticraftWorldGen.instance;
+        GameRegistry.registerWorldGenerator(generator, 3);
+        MinecraftForge.EVENT_BUS.register(generator);
+    }
 }
 
 }
