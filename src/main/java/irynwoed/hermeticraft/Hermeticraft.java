@@ -1,7 +1,7 @@
 package irynwoed.hermeticraft;
 
 import irynwoed.hermeticraft.blocks.HermeticraftBlocks;
-import irynwoed.hermeticraft.world.WorldGen;
+import irynwoed.hermeticraft.world.HermeticraftWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -64,7 +64,7 @@ public class Hermeticraft {
 	        public void preInit(FMLPreInitializationEvent e) {
 	        	
 	        	HermeticraftBlocks.init();
-	        	WorldGen.init();
+	        	HermeticraftWorldGen.init();
 
 	        }
 
